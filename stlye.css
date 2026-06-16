@@ -1,0 +1,121 @@
+/* ==========================================================================
+   RESET DE MARGENS E ACESSIBILIDADE
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   CORPO DO BLOG (ESTILO TERMINAL DE HACKER)
+   ========================================================================== */
+body {
+    background-color: #000000; /* Fundo preto absoluto */
+    color: #00ff00;            /* Verde neon clássico de terminal */
+    font-family: 'Courier New', Courier, monospace; /* Fonte estilo código */
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+/* CONTAINER CENTRAL (Crucial para UX: evita que o texto estique demais em telas grandes) */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   CABECALHO DO BLOG
+   ========================================================================== */
+header {
+    text-align: center;
+    border: 2px dashed #00ff00; /* Borda tracejada estilo software antigo */
+    padding: 30px;
+    margin-bottom: 50px;
+    background-color: #030a03;  /* Um verde quase preto para dar profundidade */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.2); /* Brilho sutil ao redor */
+}
+
+header h1 {
+    color: #ffffff; /* Título principal em branco para contraste */
+    font-size: 2.2rem;
+    text-shadow: 0 0 12px #00ff00; /* Efeito neon verde */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #88ff88; /* Verde mais claro e suave para o subtítulo */
+    font-size: 1rem;
+}
+
+/* ==========================================================================
+   ARTIGOS / POSTS
+   ========================================================================== */
+article {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-left: 3px solid #00ff00; /* Linha vertical verde na esquerda do post */
+    background-color: rgba(0, 255, 0, 0.01); /* Levíssimo fundo verde de destaque */
+}
+
+article h2 {
+    color: #ffffff; /* Títulos dos posts em branco */
+    font-size: 1.4rem;
+    text-shadow: 0 0 8px #00ff00; /* Brilho neon nos subtítulos */
+    margin-bottom: 15px;
+}
+
+article p {
+    margin-bottom: 15px;
+}
+
+/* DESTAQUES NO TEXTO (STRONG) */
+strong {
+    color: #ff00ff; /* Rosa choque / Magenta para dar o contraste do Cyberpunk */
+    text-shadow: 0 0 5px #ff00ff; /* Brilho neon rosa */
+}
+
+/* ==========================================================================
+   ESTILIZAÇÃO DAS LISTAS (UX IMPROVEMENT)
+   ========================================================================== */
+ul {
+    list-style: none; /* Remove a bolinha padrão do HTML */
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Transforma o marcador da lista em um prompt de comando ">" azul ciano */
+ul li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: #00ffff; /* Ciano/Azul elétrico */
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+/* ==========================================================================
+   LINHA DIVISÓRIA E RODAPÉ
+   ========================================================================== */
+hr {
+    border: 0;
+    border-top: 2px dashed rgba(0, 255, 0, 0.3); /* Linha divisória discreta */
+    margin: 40px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 255, 0, 0.3);
+    font-size: 0.9rem;
+    color: #00aa00; /* Verde mais escuro para o rodapé ficar discreto */
+}
